@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Comprehensive Web Form</title>
+</head>
+<body>
+  <form>
+    <!-- Select Menu -->
+    <label for="language">Favorite Programming Language:</label>
+    <select id="language" name="language" aria-label="Favorite Programming Language">
+      <option value="python">Python</option>
+      <option value="javascript">JavaScript</option>
+      <option value="java">Java</option>
+      <option value="csharp">C#</option>
+    </select>
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>Level of Expertise:</legend>
+      <input type="radio" id="beginner" name="expertise" value="beginner" aria-labelledby="beginner-label">
+      <label id="beginner-label" for="beginner">Beginner</label>
+      <input type="radio" id="intermediate" name="expertise" value="intermediate" aria-labelledby="intermediate-label">
+      <label id="intermediate-label" for="intermediate">Intermediate</label>
+      <input type="radio" id="advanced" name="expertise" value="advanced" aria-labelledby="advanced-label">
+      <label id="advanced-label" for="advanced">Advanced</label>
+    </fieldset>
+    <br><br>
+
+    <!-- Checkboxes -->
+    <fieldset>
+      <legend>Preferred Development Platforms:</legend>
+      <input type="checkbox" id="web" name="platform" value="web" aria-labelledby="web-label">
+      <label id="web-label" for="web">Web</label>
+      <input type="checkbox" id="mobile" name="platform" value="mobile" aria-labelledby="mobile-label">
+      <label id="mobile-label" for="mobile">Mobile</label>
+      <input type="checkbox" id="desktop" name="platform" value="desktop" aria-labelledby="desktop-label">
+      <label id="desktop-label" for="desktop">Desktop</label>
+    </fieldset>
+    <br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
